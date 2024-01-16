@@ -49,7 +49,7 @@ public class PhoneBookApp {
 		   //,로 분리한다-->name=정우성, hp=010-0220-2222 ,company=02-222-2222
 		
 		   //출력한다
-		//null이면 반복종료
+		//null이면 반복종료si
 		
 		//종료
 		
