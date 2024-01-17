@@ -22,10 +22,6 @@ public class PhoneBookApp {
 		Person p01 = new Person("박종희", "010-2322-3133", "031-2453-4111");
 		pList.add(p01);
 
-		Writer wt = new FileWriter("C:\\javaStudy\\PhoneDB.txt");
-		BufferedWriter bw = new BufferedWriter(wt);
-
-		
 		while (true) {
 			String str = br.readLine();
 			if (str == null) {
@@ -37,10 +33,13 @@ public class PhoneBookApp {
 			Person p02 = new Person(personInfo[0], personInfo[1], personInfo[2]);
 			pList.add(p02);
 		}
+		Writer wt = new FileWriter("C:\\javaStudy\\PhoneDB.txt");
+		BufferedWriter bw = new BufferedWriter(wt);
 
 		for (int i = 0; i < pList.size(); i++) {
 			bw.write(pList.get(i).getName() + "," + pList.get(i).getHp() + "," + pList.get(i).getCompany());
 			bw.newLine();
+			System.out.println(pList.get(i).getName() + "," + pList.get(i).getHp() + "," + pList.get(i).getCompany());
 
 		}
 
